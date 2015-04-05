@@ -1,16 +1,16 @@
-## YELP! IT
+### YELP! IT
 
 - Project 5 Neighbourhood-Map of Udacity Front-End Web Developer Nanodegree
 
 TO RUN:
 
-Visit my page repository: https://h-ARTS.github.io
+- Visit my page repository: https://h-ARTS.github.io
 
-Insert anything what like to "yelp!" it. Example: "Tommy Hilfiger" in "Zurich Paradeplatz"
+- Insert anything what like to "yelp!" it. Example: "Tommy Hilfiger" in "Zurich Paradeplatz"
 
-Click search or press enter and you will get the results.
+- Click search or press enter and you will get the results.
 
-By going over the markers you will see the address of that place.
+- By going over the markers you will see the address of that place.
 
 #And don't forget to visit me first!
 
