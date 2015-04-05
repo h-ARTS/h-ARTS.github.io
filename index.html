@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>District 4, Ma Home</title>
+        <meta charset="utf-8">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/styles.min.css" rel="stylesheet" media="screen">
+        <script async src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+        <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+        <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Mini Navi</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="img/yelp_logo_75x38.png" id="nav">
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form data-bind="submit: search" class="nav navbar-nav navbar-form navbar-right ">
+                        <label id='nav'>Yelp! for:</label>
+                        <input type="text" id='what' placeholder="Schools, shops, job" class="form-control">
+                        <label id='nav'>Near:</label>
+                        <input type="text" id='address' placeholder="Zürich Bahnhofstr" class="form-control">
+                        <input data-bind="click: search, submit: search" id="search-btn" type="submit" class="btn btn-default" value="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="body" class="container">
+            <div class="row">
+                <div id="map-canvas" class="col-xs-9"></div>
+                <div id="sidemenu" class="col-md-3">
+                    <div id="menu-contents" class="row">
+                        <div class="col-xs-12">
+                            <h4 align='center'>Your wish to visit:</h4>
+                            <div data-bind="foreach: listings" class="col-xs-12">
+                                <div data-bind="event: { mouseover: show, mouseout: hide }" style="color:black;" class="thumbnail">
+                                  <img data-bind="attr: { src: image_url }" src="" alt="image">
+                                  <h4><a data-bind="attr: { href: url}, text: name"></a></h4>
+                                  <li data-bind="text: location"></li>
+                                  <li data-bind="text: display_phone"></li>
+                                  <p data-bind="text: snippet_text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script async src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script async src="bower_components/knockout/dist/knockout.js"></script>
+        <script async src="js/mapstyle.min.js"></script>
+        <script async src="js/app.min.js"></script>
+        <script>
+            //If you submit on the search
+            var openMenu = function() {
+                $("#sidemenu").animate({left:'0px'}, {queue: false, duration: 350});
+            };
+            //Manually toggling.
+            $("#sidemenu").click(function() {
+                if($("#sidemenu").css("left") == "-200px"){
+                    openMenu();
+                } else {
+                    $("#sidemenu").animate({left:'-200px'}, {queue: false, duration: 350})
+                }
+            });
+            //If you hit the search button or pressing enter, the results will open but not close.
+            $("#search-btn").click(function() {
+                openMenu();
+            });
+        </script>
+    </body>
+</html>
