@@ -135,7 +135,7 @@ var ViewModel = function() {
         parameters.push(['oauth_token', auth.accessToken]);
         parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
         var message = {
-            'action' : 'http://api.yelp.com/v2/search',
+            'action' : 'https://api.yelp.com/v2/search',
             'method' : 'GET',
             'parameters' : parameters
         };
