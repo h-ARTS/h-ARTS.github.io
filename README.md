@@ -1,4 +1,4 @@
-### YELP! IT
+# YELP! IT
 
 - Project 5 Neighbourhood-Map of Udacity Front-End Web Developer Nanodegree
 
@@ -12,7 +12,7 @@ TO RUN:
 
 - By going over the markers you will see the address of that place.
 
-#And don't forget to visit me first!
+###And don't forget to visit me first!
 
 How to use map on trackpad (Mac):
 
@@ -22,7 +22,7 @@ Zoom in -> 2 fingers and slide down
 
 Zoom out -> 2 fingers and slide up
 
-#Resources:
+###Resources:
 
 https://api.jquery.com/jquery.ajax/
 https://www.evoluted.net/thinktank/web-design/custom-google-maps-style-tool
