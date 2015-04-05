@@ -17,7 +17,9 @@ By going over the markers you will see the address of that place.
 How to use map on trackpad (Mac):
 
 Moving the map -> 3 fingers and move around
+
 Zoom in -> 2 fingers and slide down
+
 Zoom out -> 2 fingers and slide up
 
 #Resources:
@@ -31,4 +33,5 @@ https://api.jquery.com/val/
 https://developers.google.com/maps/documentation/javascript/styling#creating_a_styledmaptype
 https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
 https://getbootstrap.com/
+
 And ofcourse: https://www.udacity.com
