@@ -545,7 +545,7 @@ nav.sticky {
 .col {
 	overflow: hidden;
 	text-align: center;
-	margin: 10px 0;
+	padding 7px 10px;
 }
 
 .col figure {
