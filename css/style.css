@@ -726,7 +726,7 @@ figure.hover-effect:hover p {
     margin-right: 15px;
 }
 
-.fa-user, .fa-envelope {
+i.fa-user, i.fa-envelope {
     position: absolute;
     font-size: 24px;
     height: 68px;
@@ -734,7 +734,7 @@ figure.hover-effect:hover p {
     color: rgba(255,255,255,0.6);
 }
 
-.fa-comment {
+i.fa-comment {
     position: absolute;
     font-size: 24px;
     height: 68px;
