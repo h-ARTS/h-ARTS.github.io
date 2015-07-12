@@ -538,8 +538,13 @@ nav.sticky {
     font-size: 50px
 }
 
+.gallery hr {
+  margin-bottom: 35px;
+}
+
 .gallery h3 {
     color: #bbbbbb;
+    margin: 0;
 }
 
 .col {
