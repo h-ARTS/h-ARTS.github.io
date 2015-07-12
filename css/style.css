@@ -550,6 +550,7 @@ nav.sticky {
 
 .col figure {
 	position: relative;
+    padding: 0;
 	z-index: 1;
 	display: inline-block;
 	overflow: hidden;
@@ -557,7 +558,6 @@ nav.sticky {
 	background: #2c3e50;
 	text-align: center;
 	cursor: pointer;
-    border: 5px solid #e3e3e3;
 }
 
 .col figure img {
