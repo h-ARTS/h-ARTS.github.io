@@ -885,3 +885,27 @@ footer>div>div>div>p {
 }
 
 /*-----------FOOTER END-----------*/
+
+/**********************************/
+/********** Media Queries *********/
+/**********************************/
+
+@media screen and (min-device-height: 992px) and (max-device-width: 1199px) {
+
+    .about h2 {
+        margin-top: 35px;
+    }
+    
+    .about p {
+        font-size: 18px;
+    }
+    
+    #aboutSpacer {
+        padding-left:0;
+    }
+    
+    .col figure h2 {
+        font-size: 35px;
+    }
+   
+}
