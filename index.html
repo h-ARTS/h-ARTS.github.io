@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- javascript -->
+    <script src="js/viewportchecker.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/app.js"></script>
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--Title-->
+    <title>My first webpage</title>
+</head>
+<body>
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container nav-container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <img alt="Brand" src="Logo.svg" class="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="nav-li"><a href="#main">What I Do</a></li>
+                    <li class="nav-li"><a href="#about">About Me</a></li>
+                    <li class="nav-li"><a href="#mywork">My Works</a></li>
+                    <li class="nav-li"><a href="#contact">Hire Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container main-container text-center">
+            <h4>I am...</h4>
+            <h1>Hanan Mufti</h1>
+            <h3>and I'm a <b>Front-End Web Developer</b></h3>
+            <a class="btn btn-learn" href="#main" role="button">Learn more</a>
+        </div>
+    </header>
+    <section id="main" class="container-fluid services">
+        <div class="container add-padding text-center">
+            
+            <div class="title">
+                <h2 class="revealOnScroll" data-animation="zoomIn">The <span class="highlight text-uppercase">services</span> I offer</h2>
+                <hr>
+            </div>
+            
+            <div class="row revealOnScroll" data-animation="fadeInSoft">
+                
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fa fa-desktop"></i>
+                    </div>
+                    <h4>UX & UI Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fa fa-code"></i>
+                    </div>    
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon">
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4>Graphics Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="container-fluid about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-12 pull-right">
+                    <h2 class="text-uppercase">Hi, I am Hanan Mufti</h2>
+                    <p>I'm twenty three old web developer and designer living in Zurich, Switzerland. I have graduated with a Nanodegree, from Udacity.</p>
+                    <p class="mini">I am passionate about building a fully functional product that make people happy. I have the enthusiasm to create challenging & beautiful products and also to gather more interesting experiences. My design process starts always from drawing to visual.</p>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 pull-left">
+                    <img class="img-responsive" src="http://lorempixel.com/400/400/people" alt="mywork">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid skills">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="text-uppercase revealOnScroll" data-animation="zoomIn">I got the <span class="highlight">skills</span></h2>
+                <hr>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span class="chart" data-percent="79">
+                        <span class="percent">79</span>
+                    </span>
+                    <h4 class="text-center">HTML/CSS</h4>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span class="chart" data-percent="69">
+                        <span class="percent">69</span>
+                    </span>
+                    <h4 class="text-center">JavaScript</h4>
+                    <h5>( jQuery &amp; AngularJS )</h5>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span class="chart" data-percent="62">
+                        <span class="percent">62</span>
+                    </span>
+                    <h4 class="text-center">Graphics Design</h4>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span class="chart" data-percent="81">
+                        <span class="percent">81</span>
+                    </span>
+                    <h4 class="text-center">UX / UI</h4>
+                    <h5>( Web Design )</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid gallery">
+        <div class="container">
+            <div class="title">
+                <h2 id="mywork" class="revealOnScroll" data-animation="zoomIn">A selection of my <span class="text-uppercase highlight">work</span></h2>
+                <hr>
+            </div>
+            <div class="row">
+			     
+				<div class="col col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="fadeInRightSoft">
+					<figure class="hover-effect">
+						<img src="/501.jpg" alt="img01">
+						<figcaption>
+							<div class="editContent">
+								<h2>Cute Kitten</h2>
+							</div>
+							<div class="editContent">
+								<p>Beautiful innocent young kitten outside in sunny weather</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>			
+					</figure>
+				</div>
+                
+                <div class="col col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="fadeInUpSoft">
+					<figure class="hover-effect">
+						<img src="/600.jpg" alt="img01">
+						<figcaption>
+							<div class="editContent">
+								<h2>Cute Kitten</h2>
+							</div>
+							<div class="editContent">
+								<p>Beautiful innocent young kitten outside in sunny weather</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>			
+					</figure>
+				</div>
+                
+                <div class="col col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="fadeInLeftSoft">
+					<figure class="hover-effect">
+						<img src="/500.jpg" alt="img01">
+						<figcaption>
+							<div class="editContent">
+								<h2>Cute Kitten</h2>
+							</div>
+							<div class="editContent">
+								<p>Beautiful innocent young kitten outside in sunny weather</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>			
+					</figure>
+				</div>
+                
+                <div class="col col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="fadeInRightSoft">
+					<figure class="hover-effect">
+						<img src="http://lorempixel.com/600/500/city" alt="img01">
+						<figcaption>
+							<div class="editContent">
+								<h2>Cities</h2>
+							</div>
+							<div class="editContent">
+								<p>Enjoyed the city and places</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>			
+					</figure>
+				</div>
+                
+                <div class="col col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="fadeInUpSoft">
+					<figure class="hover-effect">
+						<img src="http://lorempixel.com/750/500/city" alt="img01">
+						<figcaption>
+							<div class="editContent">
+								<h2>Cities</h2>
+							</div>
+							<div class="editContent">
+								<p>Enjoyed the city and places</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>			
+					</figure>
+				</div>
+                
+                <div class="col col-md-4 col-sm-6 col-xs-12 revealOnScroll" data-animation="fadeInLeftSoft">
+					<figure class="hover-effect">
+						<img src="http://lorempixel.com/700/500/city" alt="img01">
+						<figcaption>
+							<div class="editContent">
+								<h2>Cities</h2>
+							</div>
+							<div class="editContent">
+								<p>Enjoyed the city and places</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>			
+					</figure>
+				</div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container-fluid contact">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center revealOnScroll" data-animation="zoomIn">Keep in <b class="text-uppercase">touch</b> with me!</h2>
+                <hr>
+                <p class="text-center revealOnScroll" data-animation="zoomIn" data-timeout="800">I am available for freelance. Can't wait for the next exciting project! Could be yours?</p>
+                <br>
+                <div class="col-md-12 forms revealOnScroll" data-animation="fadeInUpSoft">
+                    <fieldset id="contact-form">
+                        <form role="form">
+                            <div class="form-group">
+                                <i class="fa fa-user"></i>
+                                <input type="text" name="contactName" class="form-control" id="inputName" placeholder="I am..." data-error-empty="What's your name?">
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Please respond at..." data-error-empty="Please enter your email address" data-error-invalid="Is this an email address?">
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-comment"></i>
+                                <textarea class="form-control" name="comments" rows="3" id="textArea" placeholder="I wanna talk about..." data-error-empty="Do you want to say something?"></textarea>                     
+                            </div>
+                            <div class="text-center">
+                                    <span class="help-block">Once I receive your message I'll respond as soon as possible.</span>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-submit" name="submit" type="submit" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button>
+                            </div>
+                            <input type="hidden" name="submitted" id="submitted" value="true">
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pull-left">
+                    <img class="logo2x" src="/Logo.svg" alt="logo">
+                    <ul class="social list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <div class="fa fa-2x fa-facebook"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="fa fa-2x fa-twitter"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="fa fa-2x fa-google-plus"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="fa fa-2x fa-linkedin"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="fa fa-2x fa-dribbble"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pull-right">
+                    <h4 class="text-right">Who am I?</h4>
+                    <p class="text-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+                </div>
+                <div class="col-xs-12 footer-text">
+                    <p class="text-center">Copyright © Hanan Mufti 2015. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.scrollto.js"></script>
+    <script>
+    $('a').click(function(e){
+        $('html,body').scrollTo(this.hash, this.hash);
+        e.preventDefault();
+    });
+    </script>
+</body>
+</html>
