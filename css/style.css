@@ -808,6 +808,10 @@ footer>div>div>div>p {
     letter-spacing: 2px;
 }
 
+#footerText {
+    display: none;
+}
+
 /*-- Social Icons --*/
 
 .social {
@@ -960,5 +964,15 @@ footer>div>div>div>p {
     .about img {
         margin: auto;
         margin-top: 30px;
+    }
+    
+    #socialSet {
+        margin: 0;
+        text-align: center;
+    }
+    
+    #footerText {
+        display: block;
+        text-align: center;
     }
 }
