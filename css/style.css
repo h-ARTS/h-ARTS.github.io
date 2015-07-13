@@ -915,7 +915,7 @@ footer>div>div>div>p {
    
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     
     .nav-li {
         padding: 15px 10px;
