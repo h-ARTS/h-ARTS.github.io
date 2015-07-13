@@ -448,7 +448,7 @@ nav.sticky {
 }
 
 .about img {
-    margin: 20px 0 0 50px;
+    margin: 0 0 0 50px;
     border-radius: 50%;
     box-shadow: 12px 0px 0px 12px rgba(255,255,255,0.1),
                 -12px 0px 0px 12px rgba(255,255,255,0.1);
@@ -898,6 +898,10 @@ footer>div>div>div>p {
     
     .about p {
         font-size: 18px;
+    }
+    
+    .about img {
+        margin: 0;
     }
     
     #aboutSpacer {
