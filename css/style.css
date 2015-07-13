@@ -890,7 +890,7 @@ footer>div>div>div>p {
 /********** Media Queries *********/
 /**********************************/
 
-@media screen and (min-device-height: 992px) and (max-device-width: 1199px) {
+@media screen and (min-height: 992px) and (max-width: 1199px) {
 
     .about h2 {
         margin-top: 35px;
