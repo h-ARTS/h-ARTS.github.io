@@ -913,3 +913,36 @@ footer>div>div>div>p {
     }
    
 }
+
+@media screen and (min-width: 768px) {
+    
+    .nav-li {
+        padding: 15px 10px;
+    }
+
+    .about h2 {
+        margin: 0;
+    }
+    
+    .about p {
+        font-size: 18px;
+        padding: 0;
+    }
+    
+    .about .mini {
+        font-size: 14px;
+    }
+    
+    .about img {
+        margin: 20px 0 0 -30px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    ul {
+        display: none;
+    }
+    
+}
