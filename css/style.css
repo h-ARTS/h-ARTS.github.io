@@ -894,6 +894,7 @@ footer>div>div>div>p {
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 
     .about h2 {
+        font-size: 40px;
         margin-top: 0;
     }
     
@@ -923,6 +924,7 @@ footer>div>div>div>p {
     }
 
     .about h2 {
+        font-size: 40px;
         margin: 0;
     }
     
