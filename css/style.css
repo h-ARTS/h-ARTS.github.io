@@ -901,11 +901,12 @@ footer>div>div>div>p {
     }
     
     .about img {
-        margin: 0;
+        margin: auto;
     }
     
     #aboutSpacer {
         padding-left: 50px;
+        margin-top: 35px;
     }
     
     .col figure h2 {
