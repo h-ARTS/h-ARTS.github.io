@@ -448,7 +448,7 @@ nav.sticky {
 }
 
 .about img {
-    margin: 0 0 0 50px;
+    margin: auto;
     border-radius: 50%;
     box-shadow: 12px 0px 0px 12px rgba(255,255,255,0.1),
                 -12px 0px 0px 12px rgba(255,255,255,0.1);
@@ -466,7 +466,8 @@ nav.sticky {
 }
 
 .about h2 {
-    margin-top: 80px;
+    font-size: 45px;
+    margin-top: 65px;
     font-weight: 300;
     letter-spacing: 0.03em
 }
@@ -893,7 +894,7 @@ footer>div>div>div>p {
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 
     .about h2 {
-        margin-top: 35px;
+        margin-top: 0;
     }
     
     .about p {
@@ -935,7 +936,7 @@ footer>div>div>div>p {
     }
     
     .about img {
-        margin: 20px 0 0 -30px;
+        margin-left: -30px;
     }
 
 }
