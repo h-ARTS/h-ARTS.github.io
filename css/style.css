@@ -991,7 +991,8 @@ footer>div>div>div>p {
 }
 
 /*@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation : portrait) {*/
- @media screen and (max-device-width: 480px) and (orientation: landscape) {
+ @media (max-device-width: 480px) and (orientation: landscape) {
+     
     .navbar {
         height: 65px;
     }
