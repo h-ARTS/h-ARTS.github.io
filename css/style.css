@@ -926,6 +926,15 @@ footer>div>div>div>p {
     .nav-li {
         padding: 15px 10px;
     }
+    
+    .main-container {
+        padding-top: 75px;
+    }
+    
+    .jumbotron {
+         height: 700px;
+         background: url("/bgimg-mobile.jpg") no-repeat center center;
+     }
 
     .about h2 {
         font-size: 40px;
@@ -952,6 +961,11 @@ footer>div>div>div>p {
     nav ul {
         display: none;
     }
+    
+    .jumbotron {
+         height: 700px;
+         background: url("/bgimg-mobile.jpg") no-repeat center center;
+     }
     
     #aboutSpacer {
         text-align: center;
