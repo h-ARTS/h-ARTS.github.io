@@ -1015,6 +1015,7 @@ footer>div>div>div>p {
      
      .jumbotron {
          height: 700px;
+         background-image: url("/bgimg-mobile.jpg");
      }
     
     .jumbotron h1 {
