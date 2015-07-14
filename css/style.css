@@ -991,7 +991,7 @@ footer>div>div>div>p {
 }
 
 /*@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation : portrait) {*/
- @media (max-device-width: 480px) and (orientation: landscape) {
+ @media (max-width: 480px) {
      
     .navbar {
         height: 65px;
@@ -1002,11 +1002,11 @@ footer>div>div>div>p {
     }
     
     .logo {
-        width: 110px;
+        width: 130px;
     }
     
     .logo.sticky {
-        width: 90px;
+        width: 110px;
     }
     
     .main-container {
