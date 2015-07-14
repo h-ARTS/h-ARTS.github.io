@@ -1010,8 +1010,12 @@ footer>div>div>div>p {
     }
     
     .main-container {
-        padding-top: 60px;
+        padding-top: 70px;
     }
+     
+     .jumbotron {
+         height: 700px;
+     }
     
     .jumbotron h1 {
         font-size: 72px;
