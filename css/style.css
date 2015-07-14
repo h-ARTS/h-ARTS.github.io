@@ -1047,6 +1047,10 @@ footer>div>div>div>p {
     p {
         padding-bottom: 20px;
     }
+     
+    .about h2 {
+        font-size: 39px;
+    }
     
     .about p { 
         font-size: 18px;
