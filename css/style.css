@@ -959,6 +959,11 @@ footer>div>div>div>p {
     
     .about h2 {
         padding-bottom: 20px;
+        margin-top: 35px;
+    }
+    
+    .about p {
+        padding: 0
     }
     
     .about img {
@@ -983,4 +988,76 @@ footer>div>div>div>p {
         display: block;
         text-align: center;
     }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation : portrait) {
+ 
+    .navbar {
+        height: 65px;
+    }
+    
+    .nav-container {
+        height: 45px;
+    }
+    
+    .logo {
+        width: 110px;
+    }
+    
+    .logo.sticky {
+        width: 90px;
+    }
+    
+    .main-container {
+        padding-top: 60px;
+    }
+    
+    .jumbotron h1 {
+        font-size: 72px;
+    }
+    
+    .jumbotron>div>h3,
+    .jumbotron>div>h4 {
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .btn-learn {
+        padding: 12px 40px;
+        margin-top: 15px;
+    }
+    
+    .services h2 {
+        font-size: 35px;
+    }
+    
+    hr {
+        margin-bottom: 20px;
+    }
+    
+    .highlight {
+        font-size: 50px;
+    }
+    
+    p {
+        padding-bottom: 20px;
+    }
+    
+    .about p { 
+        font-size: 18px;
+        padding: 0;
+    }
+    
+    .about.mini {
+        font-size: 15px;
+    }
+    
+    .about img {
+        width: 75%;
+    }
+    
+    .form-control {
+        font-size: 22px;
+    }
+
 }
