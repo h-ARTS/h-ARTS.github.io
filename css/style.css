@@ -570,7 +570,7 @@ nav.sticky {
 	position: relative;
 	display: block;
 	min-height: 100%;
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .col figure figcaption {
@@ -622,7 +622,7 @@ nav.sticky {
 figure.hover-effect img {
 	width: -webkit-calc(100% + 50px);
 	width:         calc(100% + 50px);
-	opacity: 0.5;
+	opacity: 0.8;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	        transition: opacity 0.35s,         transform 0.35s;
 	-webkit-transform: translate3d(-40px,0, 0);
@@ -1054,6 +1054,22 @@ footer>div>div>div>p {
     
     .about img {
         width: 75%;
+    }
+    
+    .col figure figcaption {
+        padding: 0em 1em 6em 1em;
+    }
+    
+    .col figure h2 {
+        font-size: 35px;
+    }
+    
+    figure.hover-effect figcaption {
+        height: 25%;
+    }
+    
+    .contact h2 {
+        font-size: 39px;
     }
     
     .form-control {
