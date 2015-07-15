@@ -29,8 +29,8 @@
 				$(this).removeClass("slideRight");
 			}
 		});
-		var $window = $(window),
-			win_height_padded = $window.height() * 1.1,
+        
+        var win_height_padded = $window.height() * 1.1,
 			isTouch = Modernizr.touch;
 		if (isTouch) {
 			$('.revealOnScroll').addClass('animated');
