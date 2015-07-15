@@ -189,10 +189,6 @@ hr {
 /*****NAVIGATION*****/
 /********************/
 
-.nav-collapse {
-    display: none;
-}
-
 .logo {
     width: 150px;
     transition: all 0.4s ease;
@@ -965,9 +961,6 @@ footer>div>div>div>p {
         display: none;
     }
     
-    .nav-collapse {
-        display: block;
-    }
     
     .jumbotron {
          height: 700px;
@@ -1016,10 +1009,6 @@ footer>div>div>div>p {
      
     .navbar {
         height: 65px;
-    }
-     
-    .nav-collapse {
-        display: block;
     }
     
     .nav-container {
