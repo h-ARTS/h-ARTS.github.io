@@ -31,7 +31,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 640px) {
   .nav-collapse li {
     width: 25%;
     *width: 24.9%; /* IE7 Hack */
@@ -40,16 +40,16 @@
 }
 
 .nav-collapse a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   width: 100%;
-  background: #f4421a;
+  background: #fff;
   border-bottom: 1px solid white;
   padding: 0.7em 1em;
   float: left;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 640px) {
   .nav-collapse a {
     margin: 0;
     padding: 1em;
@@ -60,12 +60,7 @@
   }
 }
 
-.nav-collapse ul ul a {
-  background: #ca3716;
-  padding-left: 2em;
-}
-
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 640px) {
   .nav-collapse ul ul a {
     display: none;
   }
@@ -106,7 +101,7 @@
 }
 
 .nav-toggle:before {
-  color: #f4421a; /* Edit this to change the icon color */
+  color: #000; /* Edit this to change the icon color */
   font-family: "responsivenav", sans-serif;
   font-style: normal;
   font-weight: normal;
