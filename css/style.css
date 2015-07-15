@@ -967,6 +967,11 @@ footer>div>div>div>p {
 
 @media screen and (max-width: 767px) {
     
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     nav {
         background-color: #fff;
         border-bottom: 1px solid #c9c9c9;
@@ -976,6 +981,12 @@ footer>div>div>div>p {
     .navbar {
         height: auto;
         border: 0;
+    }
+    
+    .navbar-header {
+        height: 65px;
+        border-bottom: 1px solid #c9c9c9;
+        box-shadow: 4px 1px 3px rgba(0,0,0,0.2);
     }
 
     .navbar-brand {
@@ -994,15 +1005,26 @@ footer>div>div>div>p {
     #main-nav {
         background-color: white;
     }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #000;
+    }
 
-    .navbar-toggle {
+    .navbar-default .navbar-toggle {
         border: none;
         border-radius: 0;
+        margin: 16px 30px 16px 16px;
     }
 
     .navbar-default .navbar-toggle:focus,
     .navbar-default .navbar-toggle:hover {
         background-color: transparent;
+        border: 0;
+    }
+    
+    .navbar-default .navbar-collapse {
+        background-color: #fff;
+        border: 0;
     }
     
     .jumbotron {

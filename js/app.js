@@ -4,7 +4,7 @@
         var $window = $(window);
         var $this = $(this);
 		$window.scroll(function() {
-			if ($this.scrollTop() > 22 && $window.width() > 768) {
+			if ($this.scrollTop() > 22 && $window.width() > 766) {
 				$('nav').addClass('sticky');
 				$('nav').removeAttr('id');
 				$('li').addClass('sticky');
