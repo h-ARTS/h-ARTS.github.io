@@ -1,8 +1,10 @@
 (function() {
 	"use strict";
 	$(document).ready(function() {
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 22 && $(document).width() > 767) {
+        var $window = $(window);
+        var $this = $(this);
+		$window.scroll(function() {
+			if ($this.scrollTop() > 22 && $window.width() > 768) {
 				$('nav').addClass('sticky');
 				$('nav').removeAttr('id');
 				$('li').addClass('sticky');
