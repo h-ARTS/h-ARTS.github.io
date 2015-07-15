@@ -965,6 +965,10 @@ footer>div>div>div>p {
         display: none;
     }
     
+    .nav-collapse {
+        display: block;
+    }
+    
     .jumbotron {
          height: 700px;
          background: url("/bgimg-mobile.jpg") no-repeat center center;
@@ -1012,6 +1016,10 @@ footer>div>div>div>p {
      
     .navbar {
         height: 65px;
+    }
+     
+    .nav-collapse {
+        display: block;
     }
     
     .nav-container {
