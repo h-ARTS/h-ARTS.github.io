@@ -2,7 +2,7 @@
 	"use strict";
 	$(document).ready(function() {
 		$(window).scroll(function() {
-			if ($(this).scrollTop() > 22 && $(window).width() > 767) {
+			if ($(this).scrollTop() > 22 && $(document).width() > 767) {
 				$('nav').addClass('sticky');
 				$('nav').removeAttr('id');
 				$('li').addClass('sticky');
