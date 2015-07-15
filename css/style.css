@@ -189,6 +189,9 @@ hr {
 /*****NAVIGATION*****/
 /********************/
 
+.nav-collapse {
+    display: none;
+}
 
 .logo {
     width: 150px;
