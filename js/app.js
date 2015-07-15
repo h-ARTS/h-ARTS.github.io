@@ -2,12 +2,12 @@
 	"use strict";
 	$(document).ready(function() {
 		$(window).scroll(function() {
-			if ($(this).scrollTop() > 22) {
+			if ($(this).scrollTop() > 22 && $(window).width() > 767) {
 				$('nav').addClass('sticky');
 				$('nav').removeAttr('id');
 				$('li').addClass('sticky');
 				$('.logo').addClass('sticky');
-				$('.navbar-nav > li > a').addClass('sticky');
+				$('.navbar-nav > li > a').addClass('sticky');    
 			} else {
 				$('nav').removeClass('sticky');
 				$('nav').attr('id', 'main-nav');

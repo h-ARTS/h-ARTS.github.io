@@ -235,6 +235,16 @@ nav.sticky {
     background-color: transparent;
 }
 
+.navbar-toggle {
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
 /****------Nav-Animation------***/
 
 .navbar-default .navbar-nav>li>a {
@@ -956,11 +966,44 @@ footer>div>div>div>p {
 }
 
 @media screen and (max-width: 767px) {
-
-    nav ul {
-        display: none;
-    }
     
+    nav {
+        background-color: #fff;
+        border-bottom: 1px solid #c9c9c9;
+        height: auto;
+    }
+
+    .navbar {
+        height: auto;
+        border: 0;
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .nav-container {
+        height: 65px;
+    }
+
+    .nav-li {
+        padding: 10px;
+        transition: all 400ms ease;
+    }
+
+    #main-nav {
+        background-color: white;
+    }
+
+    .navbar-toggle {
+        border: none;
+        border-radius: 0;
+    }
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
     
     .jumbotron {
          height: 700px;
