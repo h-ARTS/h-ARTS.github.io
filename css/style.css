@@ -1001,7 +1001,6 @@ footer>div>div>div>p {
     }
     
     .navbar-header {
-        height: 65px;
         border-bottom: 1px solid #c9c9c9;
         box-shadow: 4px 1px 3px rgba(0,0,0,0.2);
     }
@@ -1096,10 +1095,6 @@ footer>div>div>div>p {
 
 /*@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation : portrait) {*/
  @media (max-width: 480px) {
-    
-    .nav-container {
-        height: 45px;
-    }
     
     .main-container {
         padding-top: 70px;
