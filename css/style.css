@@ -1023,6 +1023,7 @@ footer>div>div>div>p {
     .navbar-default .navbar-nav>li>a:hover,
     .navbar-default .navbar-nav>li>a:focus {
         color: #000;
+        text-decoration: underline;
     }
 
     .navbar-default .navbar-toggle {
