@@ -988,6 +988,10 @@ footer>div>div>div>p {
         border: 0;
     }
     
+    .navbar-nav {
+        margin: 7.5px;
+    }
+    
     .navbar-header {
         height: 65px;
         border-bottom: 1px solid #c9c9c9;
@@ -1014,6 +1018,11 @@ footer>div>div>div>p {
     
     .navbar-default .navbar-nav>li>a {
         color: #000;
+    }
+    
+    .navbar-default.navbar-nav>li>a:hover {
+        color: #000;
+        
     }
 
     .navbar-default .navbar-toggle {
