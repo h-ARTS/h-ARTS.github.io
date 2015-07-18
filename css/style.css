@@ -1003,6 +1003,7 @@ footer>div>div>div>p {
     }
 
     .nav-li {
+        text-align: right;
         padding: 10px;
         transition: all 400ms ease;
     }
