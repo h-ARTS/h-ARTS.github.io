@@ -1020,9 +1020,9 @@ footer>div>div>div>p {
         color: #000;
     }
     
-    .navbar-default.navbar-nav>li>a:hover {
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:focus {
         color: #000;
-        
     }
 
     .navbar-default .navbar-toggle {
