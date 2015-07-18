@@ -1041,6 +1041,7 @@ footer>div>div>div>p {
     .navbar-default .navbar-collapse {
         background-color: #fff;
         border: 0;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
     }
     
     .jumbotron {
