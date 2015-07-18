@@ -1010,7 +1010,7 @@ footer>div>div>div>p {
     }
 
     .nav-container {
-        height: 65px;
+        height: auto;
     }
 
     .nav-li {
