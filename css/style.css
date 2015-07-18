@@ -982,6 +982,14 @@ footer>div>div>div>p {
         border-bottom: 1px solid #c9c9c9;
         height: auto;
     }
+    
+    .logo {
+        height: 60px;
+    }
+    
+    .logo.sticky {
+        width: 50px;
+    }
 
     .navbar {
         height: auto;
@@ -1029,7 +1037,7 @@ footer>div>div>div>p {
     .navbar-default .navbar-toggle {
         border: none;
         border-radius: 0;
-        margin: 16px 30px 16px 16px;
+        margin: 12px 30px 12px 12px;
     }
 
     .navbar-default .navbar-toggle:focus,
@@ -1088,21 +1096,9 @@ footer>div>div>div>p {
 
 /*@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation : portrait) {*/
  @media (max-width: 480px) {
-     
-    .navbar {
-        height: 65px;
-    }
     
     .nav-container {
         height: 45px;
-    }
-    
-    .logo {
-        width: 130px;
-    }
-    
-    .logo.sticky {
-        width: 110px;
     }
     
     .main-container {
