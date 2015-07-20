@@ -91,8 +91,8 @@ hr {
 @keyframes fadeInSoft {
     0% {
         opacity: 0;
-        -webkit-transform: translateX(-50px);
-        transform: translateX(-50px);
+        -webkit-transform: translate3D(-50px, 0, 0);
+        transform: translate3D(-50px, 0, 0);
     }
 
     100% {
@@ -105,6 +105,8 @@ hr {
 .fadeInSoft {
     -webkit-animation-name: fadeInSoft;
             animation-name: fadeInSoft;
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 @keyframes fadeInUpSoft {
@@ -130,8 +132,10 @@ hr {
 }
 
 .fadeInUpSoft {
-  -webkit-animation-name: fadeInUpSoft;
-          animation-name: fadeInUpSoft;
+    -webkit-animation-name: fadeInUpSoft;
+            animation-name: fadeInUpSoft;
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 @keyframes fadeInRightSoft {
@@ -157,8 +161,10 @@ hr {
 }
 
 .fadeInRightSoft {
-  -webkit-animation-name: fadeInRightSoft;
-          animation-name: fadeInRightSoft;
+    -webkit-animation-name: fadeInRightSoft;
+            animation-name: fadeInRightSoft;
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 @keyframes fadeInLeftSoft {
@@ -184,8 +190,17 @@ hr {
 }
 
 .fadeInLeftSoft {
-  -webkit-animation-name: fadeInLeftSoft;
-          animation-name: fadeInLeftSoft;
+    -webkit-animation-name: fadeInLeftSoft;
+            animation-name: fadeInLeftSoft;
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.zoomIn {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 /*------BODY END------*/
@@ -285,17 +300,21 @@ nav.sticky {
 	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 	   -moz-transition: height 0.3s, opacity 0.3s,    -moz-transform 0.3s;
 	        transition: height 0.3s, opacity 0.3s,         transform 0.3s;
-	-webkit-transform: translateY(-10px);
-	   -moz-transform: translateY(-10px);
-	        transform: translateY(-10px);
+	-webkit-transform: translate3D(0, -10px, 0);
+	   -moz-transform: translate3D(0, -10px, 0);
+	        transform: translate3D(0, -10px, 0);
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 .navbar-default .navbar-nav>li>a:hover::after {
 	height: 2px;
 	opacity: 0.9;
-	-webkit-transform: translateY(0px);
-	   -moz-transform: translateY(0px);
-	        transform: translateY(0px);
+	-webkit-transform: translate3D(0px, 0, 0);
+	   -moz-transform: translate3D(0px, 0, 0);
+	        transform: translate3D(0px, 0, 0);
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 .navbar-default .navbar-nav>li>a.sticky::after {
@@ -311,17 +330,21 @@ nav.sticky {
 	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 	   -moz-transition: height 0.3s, opacity 0.3s,    -moz-transform 0.3s;
 	        transition: height 0.3s, opacity 0.3s,         transform 0.3s;
-	-webkit-transform: translateY(-10px);
-	   -moz-transform: translateY(-10px);
-	        transform: translateY(-10px);
+	-webkit-transform: translate3D(0, -10px, 0);
+	   -moz-transform: translate3D(0, -10px, 0);
+	        transform: translate3D(0, -10px, 0);
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 .navbar-default .navbar-nav>li>a.sticky:hover::after {
 	height: 2px;
 	opacity: 0.9;
-	-webkit-transform: translateY(0px);
-	   -moz-transform: translateY(0px);
-	        transform: translateY(0px);
+	-webkit-transform: translate3D(0, 0px, 0);
+	   -moz-transform: translate3D(0, 0px, 0);
+	        transform: translate3D(0, 0px, 0);
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 
@@ -641,6 +664,8 @@ figure.hover-effect img {
 	        transition: opacity 0.35s,         transform 0.35s;
 	-webkit-transform: translate3d(-40px,0, 0);
 	        transform: translate3d(-40px,0,0);
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 figure.hover-effect figcaption {
@@ -655,6 +680,8 @@ figure.hover-effect h2,
 figure.hover-effect p {
 	-webkit-transform: translate3d(0,40px,0);
 	        transform: translate3d(0,40px,0);
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 figure.hover-effect h2 {
@@ -679,6 +706,8 @@ figure.hover-effect:hover h2,
 figure.hover-effect:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	        transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
 }
 
 figure.hover-effect:hover p {
@@ -781,7 +810,7 @@ textarea.form-control {
     background-color: rgba(255,255,255,0.1);
     font-size: 20px;
     color: rgba(255,255,255,0.9);
-    transition: all 0.4s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .btn-submit:hover {

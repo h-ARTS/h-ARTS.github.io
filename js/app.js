@@ -1,4 +1,4 @@
-(function() {
+function contentAnimate() {
 	"use strict";
 	$(document).ready(function() {
         var $window = $(window);
@@ -92,4 +92,8 @@
 		revealOnScroll();
 		$window.on('scroll', revealOnScroll);
 	});
-})();
+}
+$.debounce(250, contentAnimate);
+$.throttle(250, contentAnimate);
+
+contentAnimate();
