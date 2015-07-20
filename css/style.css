@@ -1044,7 +1044,7 @@ footer>div>div>div>p {
 
     .nav-li {
         text-align: right;
-        padding: 10px;
+        padding: 5px 0 5px 0;
         transition: all 400ms ease;
     }
 
