@@ -1026,7 +1026,7 @@ footer>div>div>div>p {
     }
     
     .navbar-nav {
-        margin: 7.5px;
+        margin: 0 7.5px;
     }
     
     .navbar-header {
@@ -1060,6 +1060,10 @@ footer>div>div>div>p {
     .navbar-default .navbar-nav>li>a:focus {
         color: #000;
         text-decoration: underline;
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #000;
     }
 
     .navbar-default .navbar-toggle {
