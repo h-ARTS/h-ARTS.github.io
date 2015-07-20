@@ -93,7 +93,7 @@ function contentAnimate() {
 		$window.on('scroll', revealOnScroll);
 	});
 }
-/*$.debounce(250, contentAnimate);
+$.debounce(250, contentAnimate);
 $.throttle(250, contentAnimate);
-*/
+
 contentAnimate();
