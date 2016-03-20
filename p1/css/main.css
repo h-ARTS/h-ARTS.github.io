@@ -1,0 +1,50 @@
+h1 {
+	font: 48px verdana, sans-serif;
+	color: #666;
+	margin: 43px 0 25px 0;
+}
+
+h2 {
+	font: bold 25px verdana, sans-serif;
+	color: #f07c17;
+	margin-top: 0px;
+	letter-spacing: -0.6px;
+}
+
+.text {
+	padding-top: 18px;
+}
+
+.textbox {
+	font: 16px verdana, sans-serif;
+	color: #666;	
+	line-height: 32px;
+
+}
+
+.col-md-5 {
+	padding-right: 14px;
+	padding-left: 25px;
+}
+
+li {
+	font: 16px verdana, sans-serif;
+	color: #666;
+	line-height: 2.0em;
+}
+
+ul {
+	padding-left: 45px;
+}
+
+.simplebox {
+	border: 1px #ccc solid;
+	padding: 0 0 30px 24px;
+	margin: 31px 0 31px 0;
+
+}
+
+.featuresM {
+	padding: 30px 0 20px 5px;
+	margin-bottom: 7px;
+}
