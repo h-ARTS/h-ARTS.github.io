@@ -3,7 +3,7 @@ var bio = {
             [
              {
                 "name":"Hanan Mufti",
-                "role":"Student in Udacity & KV Businessschool",
+                "role":"Currently searching for new oppertunities",
                 "contacts": {
                     "mobile":"+41 76 420 42 82",
                     "email":"pak2008@hotmail.de",
@@ -12,9 +12,9 @@ var bio = {
                     "location": "Zürich, Schwamendingen"
                 },
 
-                "welcomeMessage":"Welcome to my java scripted homepage OMG!",
+                "welcomeMessage":"Welcome everyone, my name is Hanan and I'm Front-End Web Developer",
                 "skills":[
-                "helpful", "programming", "playing", "reading", "shopping"
+                "HTML", "CSS", "JavaScript", "jQuery", "Knockout.js", "AngularJS", "WordPress", "Adobe Photoshop", "UX", "Microsoft Office Suite"
                 ],
                 "bioPic":"images/fry.jpg"
              }
@@ -23,30 +23,36 @@ var bio = {
 
 var education = {
     			"schools": [
-    			{
-        			"name": "KV Businessschool",
-        			"location": "Zurich, Escher-Wyss-Platz",
-        			"degree": "edupool.ch",
-        			"majors": ["HSV"],
-        			"dates": 2015,
-        			"url": "http://www.kvz-weiterbildung.ch"
-    			},
-    			{
-        			"name": "SVBL-School",
-        			"location": "Zürich, Dietikon",
-        			"degree": "Logistician-EFZ",
-        			"majors": ["EFZ"],
-        			"dates": 2013,
-        			"url": "http://www.svbl.ch"
-    			}
+                    {
+                        "name": "KV Businessschool",
+                        "location": "Zurich, Escher-Wyss-Platz",
+                        "degree": "edupool.ch",
+                        "majors": ["Foundation Degree"],
+                        "dates": "Febraury 2015 - June 2015",
+                        "url": "http://www.kvz-weiterbildung.ch"
+                    },
+                    {
+                        "name": "SVBL-School",
+                        "location": "Zürich, Dietikon",
+                        "degree": "Logistician-EFZ",
+                        "majors": ["EFZ"],
+                        "dates": "August 2010 - July 2013",
+                        "url": "http://www.svbl.ch"
+                    }
  				],
  				"onlineCourses": [
  					{
- 						"title": "Intro HTML and CSS",
  						"school": "Udacity",
- 						"date": "March 2015",
+                        "title": "Front-End Developer Nanodegree",
+ 						"date": "March - April 2015",
  						"url": "http://www.udacity.com"
- 					}
+ 					},
+                    {
+                        "school": "FreeCodeCamp",
+                        "title": "Full-Stack Web Developer",
+                        "date": "October 2015 - present",
+                        "url": "https://www.freecodecamp.com"
+                    }
  				]
 }
 
@@ -57,21 +63,21 @@ var work = {
                     "title": "Logistician",
                     "location": "Zürich, Otelfingen",
                     "dates": "10.02.2014 - 29.02.2014",
-                    "descripton": "Working in Warehouse with BMW spareparts and MINI ofcourse too Wasn't too interesting because days were going too long. But i enjoyed by looking at the cars again and again. I know that sounds weird.... :O"
+                    "descripton": ""
                   }, 
                   {
                     "employer": "Hilti",
                     "title": "Logistician",
                     "location": "Zürich, Adliswil",
                     "dates": "13.05.2014 - 26.06.2014",
-                    "descripton": "Enjoyed a lot with some new friends. Summer and hot it wasn't that easy but at least cool people ;)"
+                    "descripton": ""
                   },
                   {
                     "employer": "Lindab Inc.",
                     "title": "Logistician",
                     "location": "Zürich, Otelfingen-Golfpark",
                     "dates": "25.10.2014 - 2.12.2014",
-                    "descripton": "Finally driving forklifts i missed them a lot! Were really cool times and again had enough fun! Sometimes complication happend but it wasn't too serious thank God!"
+                    "descripton": ""
                   }
                 ]
 }
@@ -79,9 +85,9 @@ var work = {
 var projects = { 
                 "projects": [
                   {
-                    "title": "Sample Project 1",
-                    "dates": "2014",
-                    "descripton":"Project about cats....They are really cute!",
+                    "title": "Build a Portfolio Site",
+                    "dates": "2015",
+                    "descripton":"This was the first Project in the Nanodegree program. All that I had to do is to build a simple portfolio web page with HTML and CSS. In this project, I used Bootstrap framework to make the site responsive.",
                     "images":[
                     "http://placekitten.com/g/500/280",
                     "http://placekitten.com/g/500/280"
@@ -115,7 +121,12 @@ bio.display = function() {
         					  HTMLskills.replace("%data%", bio.bio[biodata].skills[1]) +
         					  HTMLskills.replace("%data%", bio.bio[biodata].skills[2]) +
         					  HTMLskills.replace("%data%", bio.bio[biodata].skills[3]) +
-        					  HTMLskills.replace("%data%", bio.bio[biodata].skills[4]);
+        					  HTMLskills.replace("%data%", bio.bio[biodata].skills[4]) +
+                              HTMLskills.replace("%data%", bio.bio[biodata].skills[5]) +
+                              HTMLskills.replace("%data%", bio.bio[biodata].skills[6]) +
+                              HTMLskills.replace("%data%", bio.bio[biodata].skills[7]) +
+                              HTMLskills.replace("%data%", bio.bio[biodata].skills[8]) +
+                              HTMLskills.replace("%data%", bio.bio[biodata].skills[9]);
         $("#header").append(formattedSkills);
     }
 }
@@ -185,10 +196,11 @@ education.display = function() {
 							HTMLschoolDegree.replace("%data%", education.schools[educations].degree);
 		$(".education-entry:last").prepend(formattedName);
 	}
-
+    
+    $(".education-entry:last").append(HTMLonlineClasses);
+    
 	for (educations in education.onlineCourses) {
 		$("#education").append(HTMLschoolStart);
-		$(".education-entry:last").append(HTMLonlineClasses);
 		$(".paddingleft").css("padding-left", "0px");
 
 		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[educations].title) +
