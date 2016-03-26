@@ -99,7 +99,39 @@ var projects = {
                     "images":[
                     "http://h-arts.github.io/p2/p2.JPG"
                     ]
-                  }, 
+                  },
+                  {
+                    "title": "Classic Arcade Game Clone",
+                    "dates": "2015",
+                    "descripton":"For this Game Clone, I've been provided with the necessary game assets like Images, javascript and so on. The only thing what I had to do is to add a number of enemies and the player to create the game completely. This is what the OOP comes in play for updating the score or moving the player.",
+                    "images":[
+                    "http://h-arts.github.io/p3/p3.JPG"
+                    ]
+                  },
+                  {
+                    "title": "Website Optimization",
+                    "dates": "2015",
+                    "descripton":"Click to edit project descriptionCertainly in this project, I've been provided with a laggy website. My task was to optimize the web page with 60 frames per second. For this, I used Google Chrome Devtools, minimized the javascript and CSS files, composed the images, optimized some javascript code in order give a smooth loading.",
+                    "images":[
+                    "http://h-arts.github.io/p4/p4.JPG"
+                    ]
+                  },
+                  {
+                    "title": "Neighborhood Map",
+                    "dates": "2015",
+                    "descripton":"I love working with APIs and frameworks. My task was to make a neighborhood map with google maps API. For catching more data trough a third-party API I used yelp! and displayed them through AJAX requests. Keeping the user interface responsive on many devices and user-friendly the twitters bootstrap framework was a simple solution tough. Also, I used a Model View Control framework which is called Knockout.js to manage the entire app.",
+                    "images":[
+                    "http://h-arts.github.io/p5/p5.JPG"
+                    ]
+                  },
+                  {
+                    "title": "Feed Reader Testing",
+                    "dates": "2015",
+                    "descripton":"Click to edit project descriptionFinally, in the last project I've been given a web-based application that reads RSS Feeds. My task was to test the functionality of this web page. They already included a simple, easy testing framework which is called jasmine.",
+                    "images":[
+                    "http://h-arts.github.io/p6/p6.jpg"
+                    ]
+                  },
                 ]
 }
 
