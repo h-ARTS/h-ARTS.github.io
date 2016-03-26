@@ -89,10 +89,17 @@ var projects = {
                     "dates": "2015",
                     "descripton":"This was the first Project in the Nanodegree program. All that I had to do is to build a simple portfolio web page with HTML and CSS. In this project, I used Bootstrap framework to make the site responsive.",
                     "images":[
-                    "http://placekitten.com/g/500/280",
-                    "http://placekitten.com/g/500/280"
+                    "http://h-arts.github.io/p1/p1.JPG"
                     ]
-                  } 
+                  },
+                  {
+                    "title": "Interactive Resume",
+                    "dates": "2015",
+                    "descripton":"Click to edit project descriptionIn this project, my resume content was in a JSON file. From there I used Javascript and jQuery to display my content dynamically on the page.",
+                    "images":[
+                    "http://h-arts.github.io/p2/p2.JPG"
+                    ]
+                  }, 
                 ]
 }
 

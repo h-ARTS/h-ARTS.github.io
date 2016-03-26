@@ -208,6 +208,11 @@ span {
   padding-bottom: 5%;
 }
 
+.img-responsive40 {
+    max-width: 40%;
+    height: auto;
+}
+
 
 @media only screen and (min-width: 750px) {
   #skillsH3,
