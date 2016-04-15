@@ -22,7 +22,7 @@ var ViewModel = function() {
         var styledMap = new google.maps.StyledMapType(styles,
             {name: "Styled Map"});
         //Standard location to "Zurich" to "my home"
-        myLatlng = new google.maps.LatLng(47.378835, 8.516470);
+        myLatlng = new google.maps.LatLng(47.405389, 8.399770);
         var mapOptions = {
           zoom: 15,
           center: myLatlng,
@@ -50,17 +50,16 @@ var ViewModel = function() {
         '<div id="siteNotice">'+
         '</div>'+
         '<h1 id="firstHeading" class="firstHeading">Home sweet Home</h1>' +
-        '<h4>In Distrcit 4</h4>' +
+        '<h4>In Dietikon</h4>' +
         '<div id="bodyContent">' +
-        '<p><b>My Home</b>, the place where i study in online classes at Udacity. ' +
-        'I moved to this place since 2 months ago and i started studying about programming since march 2015. ' +
-        'Designing webpages, artworks, signatures, etc. since more than 7 years ago and its one of my passion. But i never lerned ' +
-        'programming in the way like a Front-End web developer. Programming was difficult for me but i was really excited about it at the same time. ' +
-        'Udacity is making this for me possible to become a proffessional Front-End web developer for my carrer and for my hobby.</p>'+
+        '<p><b>My Home</b>, temporary living with my friend. ' +
+        'I moved to this place since march 2016. ' +
+        'Now searching for new opportunities in Web Dev industry. ' +
+        'Udacity made me possible to become a proffessional Front-End Web Developer for my carrier and continued with other online courses such as AngularJS in codecademy or in codeschool. Without the ability to learn I would never reach this stage. </p>'+
         '<hr>' +
-        '<p>This is by the way one of my 5th Project called "The neighbourhood-map". I hope you are enjoying.<br> Thanks for visiting my place :)</p>'+
+        '<p>This is by the way one of my project called "The neighbourhood map". I hope you are enjoying.<br> Thanks for visiting my place! :)</p>'+
         '<p>Udacity, <a href="https://www.udacity.com">'+
-        'https://www.udacity.com</a></p>'+
+        'www.udacity.com</a></p>'+
         '</div>'+
         '</div>';
 
@@ -73,7 +72,7 @@ var ViewModel = function() {
             position: myLatlng,
             map: map,
             animation: google.maps.Animation.DROP,
-            title: 'Home sweet Home (District 4)'
+            title: 'Home sweet Home'
         });
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.open(map,marker);
