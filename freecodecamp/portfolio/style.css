@@ -1,6 +1,6 @@
 @font-face {
     font-family: TWCenMT;
-    src:url(font/TCM_____.ttf);
+    src:url(http://h-arts.github.io/freecodecamp/portfolio/font/TCM_____.ttf);
 }
 
 body {
@@ -85,7 +85,7 @@ body {
 }
 
 .jumbotron {
-    background: #fff url(/hero.jpg) 0 0 no-repeat;
+    background: #fff url(http://h-arts.github.io/freecodecamp/portfolio/hero.jpg) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
     height: 520px;
@@ -162,19 +162,19 @@ body {
 
 
 .thumbnail-bg {
-    background: #fff url(p1.jpg) 0 0 no-repeat;
+    background: #fff url(http://h-arts.github.io/freecodecamp/portfolio/p1.jpg) 0 0 no-repeat;
     background-size: cover;
     height: 161px;
 }
 
 .thumbnail-bg2 {
-    background: #fff url(p2.jpg) 0 0 no-repeat;
+    background: #fff url(http://h-arts.github.io/freecodecamp/portfolio/p2.jpg) 0 0 no-repeat;
     background-size: cover;
     height: 161px;
 }
 
 .thumbnail-bg3 {
-    background: #fff url(p3.jpg) 0 0 no-repeat;
+    background: #fff url(http://h-arts.github.io/freecodecamp/portfolio/p3.jpg) 0 0 no-repeat;
     background-size: cover;
     background-position: 0 -176px;
     height: 161px;
