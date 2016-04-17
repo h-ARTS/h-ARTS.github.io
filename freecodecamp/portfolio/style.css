@@ -1,6 +1,6 @@
 @font-face {
     font-family: TWCenMT;
-    src:url(https://h-arts.github.io/freecodecamp/portfolio/font/TCM_____.TTF);
+    src:url(http://h-arts.github.io/freecodecamp/portfolio/font/TCM_____.TTF);
 }
 
 body {
@@ -85,7 +85,7 @@ body {
 }
 
 .jumbotron {
-    background: #fff url(https://h-arts.github.io/freecodecamp/portfolio/hero.jpg) 0 0 no-repeat;
+    background: #fff url(http://h-arts.github.io/freecodecamp/portfolio/hero.jpg) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
     height: 520px;
@@ -162,19 +162,19 @@ body {
 
 
 .thumbnail-bg {
-    background: #fff url(https://h-arts.github.io/freecodecamp/portfolio/p1.JPG) 0 0 no-repeat;
+    background: #fff url(http://h-arts.github.io/freecodecamp/portfolio/p1.JPG) 0 0 no-repeat;
     background-size: cover;
     height: 161px;
 }
 
 .thumbnail-bg2 {
-    background: #fff url(https://h-arts.github.io/freecodecamp/portfolio/p2.JPG) 0 0 no-repeat;
+    background: #fff url(http://h-arts.github.io/freecodecamp/portfolio/p2.JPG) 0 0 no-repeat;
     background-size: cover;
     height: 161px;
 }
 
 .thumbnail-bg3 {
-    background: #fff url(https://h-arts.github.io/freecodecamp/portfolio/p3.JPG) 0 0 no-repeat;
+    background: #fff url(http://h-arts.github.io/freecodecamp/portfolio/p3.JPG) 0 0 no-repeat;
     background-size: cover;
     background-position: 0 -176px;
     height: 161px;
@@ -262,8 +262,8 @@ footer {
 }
 
 @media only screen 
-and (min-width: 769px) 
-and (max-width: 996px) {
+and (min-device-width: 769px) 
+and (max-device-width: 996px) {
     
     .socialicon1 {
         text-align: left;
@@ -289,7 +289,7 @@ and (max-width: 996px) {
 }
 
 @media only screen 
-and (max-width : 768px) {
+and (max-device-width : 768px) {
     .me {
         padding-left: 40px;
     }
