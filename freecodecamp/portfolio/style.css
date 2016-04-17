@@ -292,8 +292,8 @@ and (max-device-width: 996px) {
 }
 
 @media only screen 
-and (min-width : 414px) 
-and (max-width : 768px) {
+and (min-device-width : 414px) 
+and (max-device-width : 768px) {
     .me {
         padding-bottom: 20px;
         padding-left: 40px;
