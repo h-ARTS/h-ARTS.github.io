@@ -4,8 +4,9 @@
 }
 
 
-html, body {
-    overflow-x:hidden;
+body {
+    width:100%;
+    overflow-x: hidden;
     font-family: Work Sans,sans-serif;
 }
 
