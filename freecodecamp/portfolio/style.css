@@ -3,7 +3,9 @@
     src:url(http://h-arts.github.io/freecodecamp/portfolio/font/TCM_____.TTF);
 }
 
-body {
+
+html, body {
+    overflow-x:hidden;
     font-family: Work Sans,sans-serif;
 }
 
@@ -289,9 +291,10 @@ and (max-device-width: 996px) {
 }
 
 @media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) {
+and (min-width : 414px) 
+and (max-width : 768px) {
     .me {
+        padding-bottom: 20px;
         padding-left: 40px;
     }
     
