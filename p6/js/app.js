@@ -1,19 +1,18 @@
 /* app.js
  *
- * This is our RSS feed reader application. It uses the Google
- * Feed Reader API to grab RSS feeds as JSON object we can make
- * use of. It also uses the Handlebars templating library and
- * jQuery.
+ * This is our RSS feed reader application. It grabs trough rsstojson due to deprecation of 
+ * GoogleFeed Reader API. It also uses the Handlebars templating library and jQuery.
  */
-
-// The names and URLs to all of the feeds we'd like available.
+/**
+ * The names and URLs to all of the feeds we'd like available.
+ */ 
 var allFeeds = [
     {
-        name: 'Udacity Blog',
-        url: 'http://blog.udacity.com/feeds/posts/default?alt=rss'
+        name: 'Smashing Magazine',
+        url: 'https://www.smashingmagazine.com/feed/'
     }, {
         name: 'CSS Tricks',
-        url: 'http://css-tricks.com/feed'
+        url: 'https://css-tricks.com/feed/'
     }, {
         name: 'HTML5 Rocks',
         url: 'http://feeds.feedburner.com/html5rocks'
@@ -23,34 +22,30 @@ var allFeeds = [
     }
 ];
 
-/* This function starts up our application. The Google Feed
- * Reader API is loaded asynchonously and will then call this
- * function when the API is loaded.
+/* This function starts up our application. The Feeds
+ * is loaded asynchonously and will then call this
+ * function when it is loaded.
  */
 function init() {
     // Load the first feed we've defined (index of 0).
     loadFeed(0);
 }
 
-/* This function performs everything necessary to load a
- * feed using the Google Feed Reader API. It will then
- * perform all of the DOM operations required to display
- * feed entries on the page. Feeds are referenced by their
- * index position within the allFeeds array.
- * This function all supports a callback as the second parameter
- * which will be called after everything has run successfully.
+/**
+ * This function has beed changed due to deprecation of Google Feed Reader API.
+ * Now it loads trough rsstojson which converts all of the feeds into json object 
  */
 function loadFeed(id, cb) {
     var feedUrl = allFeeds[id].url,
-        feedName = allFeeds[id].name,
-        feed = new google.feeds.Feed(feedUrl);
+        feedName = allFeeds[id].name;
 
-    /* Load the feed using the Google Feed Reader API.
-     * Once the feed has been loaded, the callback function
-     * is executed.
-     */
-    feed.load(function(result) {
-        if (!result.error) {
+    $.ajax({
+        type: "POST",
+        url: "https://rsstojson.udacity.com/parseFeed",
+        data: JSON.stringify({url: feedUrl}),
+        contentType: "application/json",
+        success: function(result, status) {
+
             /* If loading the feed did not result in an error,
              * get started making the DOM manipulations required
              * to display the feed entries on screen.
@@ -64,27 +59,26 @@ function loadFeed(id, cb) {
             title.html(feedName);   // Set the header text
             container.empty();      // Empty out all previous entries
 
-            /* Loop through the entries we just loaded via the Google
-             * Feed Reader API. We'll then parse that entry against the
-             * entryTemplate (created above using Handlebars) and append
-             * the resulting HTML to the list of entries on the page.
-             */
             entries.forEach(function(entry) {
                 container.append(entryTemplate(entry));
             });
-        }
 
-        if (cb) {
-            cb();
-        }
+            if (cb) {
+                cb();
+            }
+
+        },
+        error: function(result, status, err) {
+
+            if (cb) {
+                cb();
+            }
+
+        },
+        dataType: "json"
     });
-}
 
-/* Google API: Loads the Feed Reader API and defines what function
- * to call when the Feed Reader API is done loading.
- */
-google.load('feeds', '1');
-google.setOnLoadCallback(init);
+}
 
 /* All of this functionality is heavily reliant upon the DOM, so we
  * place our code in the $() function to ensure it doesn't execute

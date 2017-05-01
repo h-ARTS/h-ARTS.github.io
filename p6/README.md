@@ -1,13 +1,11 @@
 # Project 6 / Feed Reader Testing
 
-This is a project about testing a web application which reads RSS Feeds. The main point in 
-this project is to use a framework called [Jasmine](http://jasmine.github.io/). To test the functionality of the web application.
-It is a great tool to make sure everything is going well.
+Unit Testing of Feed Reader App.
+Technologies used: Jasmin Testing Framework, JavaScript, jQuery
 
 ## How to use?
 
-1. Clone, fork or download as a zip the whole repository. When you download as a zip than extract this.
-2. Open the index.html in your browser
+[Open this Link](https://h-ARTS.github.io/p6)
 
 ## Which tests are demonstrated?
 
@@ -17,7 +15,7 @@ It is a great tool to make sure everything is going well.
 * Ensures that the RSS Feeds has valid links and they are defined too
 * Makes sure that the names are defined and are not empty
 
-#### The menu:
+#### The Menu:
 
 * They should be hidden by default
 * The menu should be visible when the icon is clicked and close too
