@@ -49,17 +49,12 @@ var ViewModel = function() {
         var contentString = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">Home sweet Home</h1>' +
-        '<h4>In Dietikon</h4>' +
+        '<h2 id="firstHeading" class="firstHeading">Home Sweet Home</h2>' +
+        '<h4>Dietikon, ZH</h4>' +
         '<div id="bodyContent">' +
-        '<p><b>My Home</b>, temporary living with my friend. ' +
-        'I moved to this place since march 2016. ' +
-        'Now searching for new opportunities in Web Dev industry. ' +
-        'Udacity made me possible to become a proffessional Front-End Web Developer for my carrier and continued with other online courses such as AngularJS in codecademy or in codeschool. Without the ability to learn I would never reach this stage. </p>'+
+        '<p>I live here and love to code. This App has been developed with JavaScript, jQuery, Knockout.js, Google Maps API and yelp! API</p>'+
         '<hr>' +
-        '<p>This is by the way one of my project called "The neighbourhood map". I hope you are enjoying.<br> Thanks for visiting my place! :)</p>'+
-        '<p>Udacity, <a href="https://www.udacity.com">'+
-        'www.udacity.com</a></p>'+
+        '<p><a class="btn btn-danger" href="https://github.com/h-ARTS/Neighborhood-Map" target="_blank" alt="Check this projects repository!">Check Repository</a></p>' +
         '</div>'+
         '</div>';
 
