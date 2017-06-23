@@ -1,0 +1,48 @@
+html,body {
+     margin-top: 2rem;
+}
+
+h1 {
+     margin-bottom: 20px;
+     font-size: 10rem;
+     font-weight: 200;
+}
+
+.btn, .form-control {
+     border-radius: 0;
+}
+
+.card-main {
+     background-color: #fff;
+     padding: 20px;
+}
+
+.card-main h3 {
+     margin-top: 0;
+     font-size: 50px;
+}
+
+.card-main button.btn-success {
+     margin-top: 10px;
+}
+
+.card-main ul.list-unstyled {
+     margin-top: 15px;
+     border-top: 1px solid #a9bdbd;
+     margin-left: -20px;
+     margin-right: -20px;
+}
+
+.card-main ul li {
+     padding: 5px 20px;
+     background-color: #e5f1f1;
+     border-bottom: 1px solid #a9bdbd;
+}
+
+.card-main ul.completed li {
+     padding: 15px 20px;
+}
+
+.card-footer {
+     padding: 20px;
+}
