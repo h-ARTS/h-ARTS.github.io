@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #444;
+}
+
+body {
+    width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    height:100%;
+}
+
+header {
+    font: bold 36px/120% Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #c00;
+    text-transform: uppercase;
+}
+
+header h1 {
+    padding: 15px;
+    text-align: center;
+    line-height: 1;
+}
+
+header p {
+    text-align: center;
+}
+
+#timer {
+    text-align: center;
+}
+
+section p {
+    font: bold 24px/150% Arial, Helvetica, sans-serif;
+    background: #ccc;
+    border: #999 2px solid;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+}
+
+.right {
+    background: #0c0;
+    border: #090 2px solid;
+    color: #060;
+}
+.wrong {
+    background: #c00;
+    border: #900 2px solid;
+    color: #600;
+}
+
+div.button-wrapper {
+    padding: 10px;
+}
+
+button {
+    font: bold 24px/150% Arial, Helvetica, sans-serif;
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+}
+#answer button {
+    margin: 10px auto;
+}
+
+form input {
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+    height: 50px;
+    font-size: 20px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
