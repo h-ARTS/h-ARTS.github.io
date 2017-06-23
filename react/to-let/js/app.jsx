@@ -1,4 +1,4 @@
-var IntroFormHandler = React.createClass({
+﻿var IntroFormHandler = React.createClass({
      render: function() {
           return(
                <div className="jumbotron jumbotron-fluid">
@@ -161,7 +161,9 @@ var App = React.createClass({
                input: input
           });
           var _this = this;
-          axios.get("https://api.nestoria.co.uk/api?encoding=json&pretty=1&action=search_listings&country=uk&listing_type=rent&place_name=" + input)
+          axios.get("https://api.nestoria.co.uk/api?encoding=json&pretty=1&action=search_listings&country=uk&listing_type=rent&place_name=" + input, {
+                withCredentials: true
+              })
                .then(function(res) {
                     _this.setState({
                          flats: res.data.response.listings
