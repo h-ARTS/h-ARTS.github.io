@@ -1,0 +1,185 @@
+.pt-1-25 {
+     padding-top: 1.25rem;
+}
+
+.display-5 {
+     font-weight: 300;
+}
+
+.jumbotron {
+     background: rgba(20,30,48,1);
+     background: -moz-linear-gradient(-45deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(20,30,48,1)), color-stop(100%, rgba(36,59,85,1)));
+     background: -webkit-linear-gradient(-45deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     background: -o-linear-gradient(-45deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     background: -ms-linear-gradient(-45deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     background: linear-gradient(135deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141e30', endColorstr='#243b55', GradientType=1 );
+     color: #fff;
+}
+
+.jumbotron .icon {
+     font-size: 9rem;
+}
+
+.jumbotron .bg-transparent{
+     background-color: rgba(255, 255, 255, 0.10);
+}
+
+.jumbotron input {
+     background-color: rgb(34, 49, 63) !important;
+     color: #fff !important;
+}
+
+.jumbotron input:-webkit-autofill {
+     background-color: rgb(34, 49, 69) !important;
+}
+
+.card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+
+.card .card-price {
+     position: absolute;
+    right: 0.25rem;
+    margin-top: -38px;
+}
+
+.card .card-price .badge {
+     font-weight: 500;
+}
+
+.card .card-title {
+     color: #22313f;
+     font-size: 1.3rem;
+}
+
+.card p.lead {
+     font-weight: 400;
+}
+
+.card .card-footer .badge-lila {
+     background-color: #9b59b6;
+     font-size: 0.75rem;
+}
+
+.card .card-block .btn-ctn {
+     color: #fff;
+     background-color: #D64541;
+     border-color: #c7413d;
+}
+
+.card .card-block .btn-ctn:hover {
+     color: #fff;
+     background-color: #b93d39;
+     border-color: #b93d39;
+}
+
+footer.jumbotron {
+     border-top: 1px solid #e3e3e3 !important;
+     background-color: #fff !important;
+     background-image: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .jumbotron .intro .ctn {
+        font-size: 0.95rem;
+    }
+    .jumbotron .home {
+        margin: auto;
+    }
+    .jumbotron .building {
+        display: none;
+    }
+    .jumbotron input.form-control {
+        font-size: 1rem;
+    }
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .jumbotron .intro .ctn {
+        font-size: 0.95rem;
+    }
+    .jumbotron .icon {
+        font-size: 8.5rem;
+    }
+    .jumbotron .home {
+        margin-right: 0.25rem !important;
+    }
+    .jumbotron .building {
+        margin-top: 0.05rem;
+    }
+    .jumbotron .search-field {
+        margin-top: 1.25rem;
+    }
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .card {
+        display: inline-block;
+        margin-bottom: 1rem;    
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .jumbotron .intro {
+        text-align: center;
+    }
+    .jumbotron .search-field {
+        margin-top: 0;
+    }
+    .display-5 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .jumbotron .icons {
+        display: none !important;
+    }
+    .jumbotron .bg-transparent {
+        margin-top: 1.5rem;
+    }
+    .form-control {
+        font-size: 1rem;
+    }
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 575px) and (orientation: landscape) {
+    .jumbotron .intro {
+        -webkit-box-flex: 0 !important;
+        -webkit-flex: 0 0 41.666667% !important;
+        -ms-flex: 0 0 41.666667% !important;
+        flex: 0 0 41.666667% !important;
+        max-width: 41.666667% !important;
+        text-align: left !important;
+    }
+    .jumbotron .search-field {
+        -webkit-box-flex: 0 !important;
+        -webkit-flex: 0 0 58.333333% !important;
+        -ms-flex: 0 0 58.333333% !important;
+        flex: 0 0 58.333333% !important;
+        max-width: 58.333333% !important;
+    }
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .display-5 {
+        text-align: left !important;
+    }
+}
