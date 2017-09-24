@@ -1,0 +1,40 @@
+html, body {
+  font-family: 'Lora', serif; }
+
+nav.navbar-inverse .navbar-text {
+  color: #fff; }
+
+nav button.navbar-toggler {
+  border: 1px solid #000 !important; }
+  nav button.navbar-toggler .fa {
+    color: #000 !important; }
+
+nav .navbar-nav .nav-link {
+  color: #000; }
+  nav .navbar-nav .nav-link:hover {
+    text-decoration: underline; }
+
+.jumbotron {
+  border: 10px solid #292b2c;
+  background-color: #fff; }
+
+.card .card-img-top {
+  border-radius: 0; }
+
+.card.card-tweet {
+  background-color: #1da1f2 !important; }
+
+.popover {
+  border-radius: 0 !important; }
+  .popover input {
+    border-radius: 0 !important; }
+    .popover input.form-control:focus, .popover input.form-control:hover {
+      border-color: #000; }
+  .popover .btn-primary {
+    background-color: #000;
+    border-color: #000;
+    border-radius: 0; }
+
+@media (max-width: 768px) {
+  .jumbotron .display-3 {
+    font-size: 3rem; } }
